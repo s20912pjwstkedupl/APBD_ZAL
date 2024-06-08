@@ -32,7 +32,7 @@ public class ClientsService : IClientsService
             throw new ClientNotFoundException();
         }
 
-        var subc = await _paymentRepository.GetForClient(idClient);
+        // var subc = await _paymentRepository.GetForClient(idClient);
         return new ClientDto()
         {
             firstName = client.FirstName,
